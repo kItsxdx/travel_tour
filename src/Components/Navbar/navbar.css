@@ -1,1 +1,95 @@
-/*# sourceMappingURL=navbar.css.map */
+:root {
+  --primarycolor:darkgreen;
+  --secondarycolor:#64DE57;
+  --gradinetcolor: linear-gradient(to right,#64DE57,darkgreen);
+  --whitecolor:white;
+  --blackcolor:black;
+  --textcolor:gray;
+  --whitecolordeam:white;
+  --graytext:rgb(190,190,190);
+  --inputcolor:lightgray;
+  --bodycolor:gray;
+  --cardBG:rgb(240, 246, 244);
+}
+
+.header {
+  position: flex;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--whitecolordeam);
+  width: 100%;
+  padding: 1rem;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(2, 15, 29, 0.9);
+}
+.header .logo {
+  color: var(--blackcolor);
+  font-weight: 600;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+}
+.header .logo .icon {
+  font-size: 25px;
+  color: var(--primarycolor);
+  transform: translateY(5px);
+}
+@media screen and (max-width: 768px) {
+  .header .navBar {
+    position: absolute;
+    background: var(--whitecolordeam);
+    height: -moz-max-content;
+    height: max-content;
+    width: 80%;
+    border-radius: 1rem;
+    top: 6rem;
+    left: 50%;
+    padding: 1rem;
+    transform: translate(-50%);
+    z-index: 2000;
+    box-shadow: 0 2px 4px rgba(2, 15, 29, 0.9);
+    transition: 0.3s ease-in-out;
+  }
+  .header .navBar .navlists {
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+    padding: 0.5rem 0;
+  }
+  .header .navBar .navlists .navItem {
+    padding: 0.5rem 0;
+  }
+  .header .navBar .navlists .navItem navLink {
+    color: var(--textcolor);
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+  .header .navBar .navlists .navItem navLink:hover {
+    color: var(--primarycolor);
+  }
+  .header .navBar .navlists .btn {
+    margin-top: 1rem;
+  }
+  .header .navBar .navlists .btn a {
+    font-weight: 100;
+    color: var(--whitecolor);
+  }
+  .header .navBar .closeNavbar {
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    color: var(--primarycolor);
+  }
+  .header .navBar .closeNavbar:hover {
+    color: var(--secondarycolor);
+  }
+}
+.header .toggleNavbar .icon {
+  font-size: 25px;
+  color: var(--primarycolor);
+}
+.header .toggleNavbar:hover.icon {
+  color: var(--secondarycolor);
+}/*# sourceMappingURL=navbar.css.map */

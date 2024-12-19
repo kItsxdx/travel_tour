@@ -1,8 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:wgth@300;400;500;600;700display-swapßß');
 
-body{
-    background-color: gray;
-}
 
 *{
     padding: 0;
@@ -15,14 +12,14 @@ body{
 :root{
     --primarycolor:darkgreen;
     --secondarycolor:#64DE57;
-    --gradinetcolor:linear-gradient(to rigth,#64DE57 ,darkgreen);
+    --gradinetcolor: linear-gradient(to right,#64DE57,darkgreen);
     --whitecolor:white;
     --blackcolor:black;
     --textcolor:gray;
     --whitecolordeam:white;
     --graytext:rgb(190,190,190);
     --inputcolor:lightgray;
-    --bodycolor:rgb(245,245,245);
+    --bodycolor:gray;
     --cardBG:rgb(240, 246, 244);
 
 }

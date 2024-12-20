@@ -1,27 +1,36 @@
 import React ,{useState} from 'react'
-import './navbar.css'
+import './navbar.scss'
 import {GiDetour} from 'react-icons/gi'
 import {IoIosCloseCircle} from 'react-icons/io'
 import {TbGridDots} from 'react-icons/tb'
 
 
 const Navbar = () => {
-    const[active ,setActive] = useState('navBar')
+    const[active, setActive] = useState('navBar')
+
     //function to toggle navBar
     const showNav = () =>{
         setActive('navBar activeNavbar')
     }
 
+    //function to remove navBar
+    const removeNavbar = () =>{
+    setActive('navBar')
+    }   
+
     return (
         <section className='navbarSection'>
             <header className='header flex'>
+
                 <dir className='logoDiv'>
                     <a href='#' className='logo flex'>
-                        <h1><GiDetour className = 'icon'/>Travel Tour (มิจพาทัวล์).</h1>
+                        <h1>
+                            <GiDetour className = 'icon'/>Travel Tour (มิจพาทัวล์).
+                        </h1>
                     </a>
                 </dir>
 
-                <div className="navBar">
+                <div className={active}>
                     <ul className="navlists flex">
                         <li className="navItem">
                             <a href='#' className='navLink'>หน้าหลัก</a>
@@ -48,14 +57,16 @@ const Navbar = () => {
                         </button>
 
                     </ul>
-                    <div className="closeNavbar">
+
+                    <div onClick={removeNavbar} className="closeNavbar">
                         <IoIosCloseCircle className='icon'/>
                     </div>
                 </div>
 
-                <div className="toggleNavbar">
+                <div onClick={showNav} className="toggleNavbar">
                     <TbGridDots className='icon'/>
                 </div>
+
             </header>
         </section>
     )

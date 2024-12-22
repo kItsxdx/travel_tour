@@ -22,12 +22,30 @@ const Home = () => {
 
                 </div>
 
+
                 <div className="cardDiv grid">
-                    <div className="destinationInput">
+                <div className="destinationInput">
                         <label htmlFor="city">ค้นหาที่เที่ยว:</label>
                         <div className="input flex">
                             <input type="text" placeholder='ใส่ช่ือตรงนี้...'/>
                             <TbLocationDollar className="icon"/>
+                        </div>
+                    </div>
+
+                    <div className="dateInput">
+                        <label htmlFor="date">เลือกวันที่เที่ยว:</label>
+                        <div className="input flex">
+                            <input type="date"/>
+                        </div>
+                    </div>
+
+                    <div className="priceInput">
+                        <div className="label_total flex">
+                            <label htmlFor="price">ราคาสูงสุด:</label>
+                            <h3 className="total">฿1,000,000</h3>
+                        </div>
+                        <div className="input flex">
+                            <input type="range" max="10000000" min="10000" />
                         </div>
                     </div>
                 </div>

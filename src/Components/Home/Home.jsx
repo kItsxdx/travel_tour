@@ -1,7 +1,9 @@
 import React from 'react'
 import './home.scss'
-import video from '../../Assets/video2.mp4';
+import video from '../../Assets/video3.mp4';
 import {TbLocationDollar} from 'react-icons/tb'
+import {HiFilter} from 'react-icons/hi'
+
 
 
 const Home = () => {
@@ -47,6 +49,11 @@ const Home = () => {
                         <div className="input flex">
                             <input type="range" max="10000000" min="10000" />
                         </div>
+                    </div>
+
+                    <div className="searchOptions flex">
+                        <HiFilter className="icon"/>
+                        <span>More Filter</span>
                     </div>
                 </div>
             </div>

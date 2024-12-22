@@ -68,6 +68,22 @@
             }
         }
 
+        .cardDive{
+            position: relative;
+            padding: 2rem 1rem;
+            background: var(--whitecolor);
+            border-radius: 10px;
+            gap: 1rem;
+
+            label{
+                display: block;
+                color: var(--textcolor);
+                padding-bottom: 10px;
+                font-size: 13px;
+                font-weight:500;
+            }
+        }
+
     }
 
 

@@ -1,8 +1,13 @@
 import React from 'react'
 import './home.scss'
-import video from '../../Assets/video3.mp4';
+import video from '../../Assets/video2.mp4';
 import {TbLocationDollar} from 'react-icons/tb'
 import {HiFilter} from 'react-icons/hi'
+import {FiFacebook} from 'react-icons/fi'
+import {FaInstagram} from 'react-icons/fa'
+import {RiTiktokLine} from 'react-icons/ri'
+import {CiViewList} from 'react-icons/ci'
+import {TbApps}from 'react-icons/tb'
 
 
 
@@ -54,6 +59,17 @@ const Home = () => {
                     <div className="searchOptions flex">
                         <HiFilter className="icon"/>
                         <span>More Filter</span>
+                    </div>
+                </div>
+                <div className="homeFooterIcons flex">
+                    <div className="rightIcons">
+                        <FiFacebook className="icon"/>
+                        <FaInstagram className="icon"/>
+                        <RiTiktokLine className="icon"/>
+                    </div>
+                    <div className="leftIcons">
+                        <CiViewList className="icon"/>
+                        <TbApps className="icon"/>
                     </div>
                 </div>
             </div>

@@ -1,6 +1,6 @@
 import React from 'react'
 import './home.scss'
-import video from '../../Assets/video2.mp4';
+import video from '../../Assets/video1.mp4';
 import {TbLocationDollar} from 'react-icons/tb'
 import {HiFilter} from 'react-icons/hi'
 import {FiFacebook} from 'react-icons/fi'
@@ -20,11 +20,11 @@ const Home = () => {
             <div className="homeContent container">
                 <div className="textDiv">
                     <span className="smallText">
-                        เที่ยวกับแมวของคุณ
+                        Travel with your cat
                     </span>
 
                     <h1 className="homeTitle">
-                        เราคือมิจที่จะพานำเที่ยวไม่ลอยแพรแน่นอน 555
+                        Welcome to the my travel tour
                     </h1>
 
                 </div>

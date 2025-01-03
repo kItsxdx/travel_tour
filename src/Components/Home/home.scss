@@ -59,7 +59,7 @@
 
             .smallText{
                 font-size: 20px;
-                text-transform: uppercase;
+                text-transform:uppercase;
             }
 
             .homeTitle{
@@ -150,6 +150,23 @@
                 }
             }
         }
+
+        .homeFooterIcons{
+            width: 100%;
+            justify-content:space-between
+            
+            .icon{
+            font-size: 20px;
+            margin: 0 5rem;
+            color: var(--whitecolor);
+            font-weight: 600;
+            &hover{
+                color: var(--primarycolor);
+            }
+        }
+        }
+
+        
 
     
     }

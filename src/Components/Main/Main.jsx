@@ -1,7 +1,7 @@
 import React from 'react'
 import './main.css'
 
-import img from '../../Assets/img.jpeg'
+import img from '../../Assets/img1.JPG'
 
 const Data = [
     {

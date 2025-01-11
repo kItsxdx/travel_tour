@@ -1,12 +1,12 @@
 import React from 'react'
 import './main.css'
 
-import img from '../../Assets/img1.JPG'
+import img from '../../Assets/img1.jpg'
 
 const Data = [
     {
     id: 1,
-    imgSrc: img,
+    imgSrc: img1,
     destTitle: 'Chiang mai',
     location: 'Thailand',
     grade: 'Cuktural Relax',

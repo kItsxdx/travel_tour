@@ -114,7 +114,7 @@ const Data = [
 ]
 const Main = () => {
     return (
-        <section className='main contrainer section'>
+        <section className='main container section'>
             <div className="secTitle">
             <h3 className="title">
                 Most visited destinations
@@ -148,7 +148,8 @@ const Main = () => {
                                             <span>{grade}<small>+1</small></span>
                                         </div>
                                         <div className="price">
-                                            <h5>{fees}</h5>
+                                        <h5>{`$${fees}`}</h5>
+
                                         </div>
                                     </div>
 

@@ -138,7 +138,7 @@ const Main = () => {
                                         {destTitle}
                                     </h4>
 
-                                    <span className="continect flex">
+                                    <span className="continent flex">
                                         <HiOutlineLocationMarker className='icon'/>
                                         <span className="name">{location}</span>
                                     </span>

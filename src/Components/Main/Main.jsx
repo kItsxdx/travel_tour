@@ -1,6 +1,8 @@
 import React from 'react'
 import './main.css'
 
+import { HiOutlineClipboardCheck, HiOutlineLocationMarker } from 'react-icons/hi';
+
 import img1 from '../../Assets/img1.JPG';
 import img2 from '../../Assets/img2.JPG';
 import img3 from '../../Assets/img3.JPG';
@@ -131,12 +133,32 @@ const Main = () => {
                                 </div>
 
                                 <div className="cardInfo">
+
                                     <h4 className="destTitle">
                                         {destTitle}
                                     </h4>
+
                                     <span className="continect flex">
-                                        
+                                        <HiOutlineLocationMarker className='icon'/>
+                                        <span className="name">{location}</span>
                                     </span>
+
+                                    <div className="fees flex">
+                                        <div className="grade">
+                                            <span>{grade}<small>+1</small></span>
+                                        </div>
+                                        <div className="price">
+                                            <h5>{fees}</h5>
+                                        </div>
+                                    </div>
+
+                                    <div className="desc">
+                                        <p>{description}</p>
+                                    </div>
+
+                                    <button className='btn flex'>
+                                        DETAILS<HiOutlineClipboardCheck className='icon'/>
+                                    </button>
                                 </div>
                             </div>)
                 }

@@ -1,7 +1,15 @@
 import React from 'react'
 import './main.css'
 
-import img from '../../Assets/img1.jpg'
+import img1 from '../../Assets/img1.JPG';
+import img2 from '../../Assets/img2.JPG';
+import img3 from '../../Assets/img3.JPG';
+import img4 from '../../Assets/img4.jpg';
+import img5 from '../../Assets/img5.jpg';
+import img6 from '../../Assets/img6.JPG';
+import img7 from '../../Assets/img7.jpg';
+import img8 from '../../Assets/img8.jpg';
+import img9 from '../../Assets/img9.jpg';
 
 const Data = [
     {
@@ -28,7 +36,7 @@ const Data = [
 
     {
     id: 3,
-    imSrc: img3,
+    imgSrc: img3,
     destTitle: 'Bangkok',
     location: 'Thailand',
     grade: 'Urban Advengture',
@@ -39,7 +47,7 @@ const Data = [
 
     {
     id: 4,
-    imSrc: img4,
+    imgSrc: img4,
     destTitle: 'Krabi',
     location: 'Thailand',
     grade: 'Nature Escape',
@@ -51,7 +59,7 @@ const Data = [
 
     {
     id: 5,
-    imSrc: img5,
+    imgSrc: img5,
     destTitle: 'Chiang Rai',
     location: 'Thailand',
     grade: 'Cultural Heritage',
@@ -62,7 +70,7 @@ const Data = [
 
     {
     id: 6,
-    imSrc: img6,
+    imgSrc: img6,
     destTitle: 'Pattaya',
     location: 'Thailand',
     grade: 'Beach & Entertainment',
@@ -72,7 +80,7 @@ const Data = [
     
     {
     id: 7,
-    imSrc: img7,
+    imgSrc: img7,
     destTitle: 'Ayutthaya',
     location: 'Thailand',
     grade: 'Historic Heritage',
@@ -83,7 +91,7 @@ const Data = [
 
      {
     id: 8,
-    imSrc: img8,
+    imgSrc: img8,
     destTitle: 'Koh Samui',
     location: 'Thailand',
     grade: 'Island Escape',
@@ -94,7 +102,7 @@ const Data = [
     
     {
     id: 9,
-    imSrc: img9,
+    imgSrc: img9,
     destTitle: 'Sukhothai',
     location: 'Thailand',
     grade: 'Ancient Wonder',
@@ -113,18 +121,27 @@ const Main = () => {
 
 
             <div className="secContent grid">
+                {Data.map(({ id, imgSrc, destTitle, location, grade, fees, description }) => 
                 {
-                    Data.map((id,imgSrc,destTitle,location,grade,fees,description)=>{
-                        return(
-                            <div key={id} className="singleDestination">
+                    return( <div key={id} 
+                            className="singleDestination">
 
-                            </div>
-                            
-                        )
+                                <div className="imageDiv">
+                                    <img src={imgSrc} alt={destTitle} />
+                                </div>
 
-                    })
+                                <div className="cardInfo">
+                                    <h4 className="destTitle">
+                                        {destTitle}
+                                    </h4>
+                                    <span className="continect flex">
+                                        
+                                    </span>
+                                </div>
+                            </div>)
                 }
-                
+            )
+                }
             </div>
         </section>
     )

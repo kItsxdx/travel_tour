@@ -8,9 +8,9 @@
     --whitecolordeam:white;
     --graytext:rgb(190,190,190);
     --inputcolor:lightgray;
-    --bodycolor:rgb(128, 128, 128);
-    --cardBG:rgb(240, 246, 244);
-    --cardHover:rgb(255,255,255);
+    --bodycolor:rgb(255, 255, 255);
+    --cardBG:rgb(225, 225, 235,.5);
+    --cardHover:rgb(225, 225, 235);
 
 }
 
@@ -22,14 +22,14 @@
         .title{
             position: relative;
             width: max-content;
-            color: var(--textcolor);
+            color: var(--blackcolor);
             margin: 1rem 0;
             z-index: 2;
 
             &::after{
                 position: absolute;
                 content: '';
-                background: var(--secondarycolor);
+                background: var(--primarycolor);
                 height: 5px;
                 width: 120px;
                 right: 0;
@@ -52,11 +52,11 @@
             border-radius: 10px;
             align-items: center;
             background: var(--cardBG);
-            box-shadow: 0  2px 4px rgba(140,140,141,0.6);
+            box-shadow: 1  2px 4px rgba(140,140,140, 0.55);
             overflow: hidden;
             &:hover{
                 background: var(--cardHover);
-                box-shadow: 1  4px 4px rgba(85,85,110,0.6);
+                box-shadow: 1  4px 4px rgba(140,140,140, 0.55);
                 transition: .3s ease;
             }
             
@@ -103,7 +103,9 @@
                         font-weight: 400;
                         font-size: 14px;
                     }
-                }.fees{
+                }
+                
+                .fees{
                     width: 100%;
                     justify-content: space-between;
                     padding: 1rem;

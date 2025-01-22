@@ -1,5 +1,5 @@
 import React from 'react'
-import './main.css'
+import './main.scss'
 
 import { HiOutlineClipboardCheck, HiOutlineLocationMarker } from 'react-icons/hi';
 
@@ -148,7 +148,7 @@ const Main = () => {
                                             <span>{grade}<small>+1</small></span>
                                         </div>
                                         <div className="price">
-                                        <h5>{`$${fees}`}</h5>
+                                        <h5>{fees}</h5>
 
                                         </div>
                                     </div>

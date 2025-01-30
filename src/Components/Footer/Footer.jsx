@@ -11,7 +11,7 @@ const Footer = () => {
             </div>
 
             <div className="secContent container">
-                <div className="contractDiv flex">
+                <div className="contactDiv flex">
                     <div className="text">
                         <small>ติดต่อเรา</small>
                         <h3>เที่ยวกับเรา</h3>

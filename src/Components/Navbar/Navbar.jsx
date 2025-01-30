@@ -1,8 +1,9 @@
 import React ,{useState} from 'react'
 import './navbar.scss'
-import {GiDetour} from 'react-icons/gi'
 import {IoIosCloseCircle} from 'react-icons/io'
 import {TbGridDots} from 'react-icons/tb'
+import {FaEarthAmericas} from 'react-icons/fa6';
+
 
 
 const Navbar = () => {
@@ -25,7 +26,7 @@ const Navbar = () => {
                 <dir className='logoDiv'>
                     <a href='#' className='logo flex'>
                         <h1>
-                            <GiDetour className = 'icon'/>Travel Tour (มิจพาทัวล์).
+                            <FaEarthAmericas className = 'icon'/>Travel Tour (มิจพาทัวล์).
                         </h1>
                     </a>
                 </dir>

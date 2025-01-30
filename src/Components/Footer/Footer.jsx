@@ -60,7 +60,9 @@ const Footer = () => {
                         </div>
                     </div>
 
+
                     <div className="footerLinks grid">
+                    {/* กลุ่มท่ี 1 */}
                         <div className="linkGroup">
                             <span className="groupTitle">
                                 เจ้าหน้าที่ของเราชาวมิจ
@@ -93,6 +95,7 @@ const Footer = () => {
 
                         </div>
                     </div>
+
                 </div>
             </div>
         </section>

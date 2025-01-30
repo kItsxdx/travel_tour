@@ -1,0 +1,112 @@
+:root{
+    --primarycolor:darkgreen;
+    --secondarycolor:#64DE57;
+    --gradinetcolor: linear-gradient(to right,#64DE57,darkgreen);
+    --whitecolor:white;
+    --blackcolor:black;
+    --textcolor:gray;
+    --whitecolordeam:white;
+    --graytext:rgb(190,190,190);
+    --inputcolor:lightgray;
+    --bodycolor:rgb(42, 123, 97);
+    --cardBG:rgb(240, 246, 244);
+
+}
+
+.footer{
+    width: 100%;
+    position: relative;
+    padding: 2rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+
+    .videoDiv{
+        position:absolute;
+        height: 100%;
+        width: 100%;
+
+        Video{
+            height: 100%;
+            object-fit: cover;
+        }
+
+        &::after{
+            content: '';
+            position: absolute;
+            background: rgba(10,84,107,0.307);
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            mix-blend-mode: multiply;
+        }
+    }
+
+    .secContent{
+        width: 100%;
+        height: max-content;
+        padding: 2rem initial;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin: auto;
+        row-gap: 2rem;
+        z-index: 100;
+        
+
+        .contactDiv{
+            justify-content: space-between;
+            flex-direction: column;
+            gap: 1rem;
+
+            .text{
+                small{
+                    font-size: 13px;
+                    font-weight: 400;
+                    color: var(--whitecolor);
+                }
+
+                h3{
+                    color: var(--whitecolor);
+                    font-size: 1.8rem;
+                }
+            }
+            .inputDiv{
+                width: 100%;
+                gap: 1rem;
+                flex-direction: column;
+
+                input{
+                    width: 100%;
+                    padding: .5rem .6rem;
+                    border-radius: 3rem;
+                    border: 1px solid --whitecolor;
+                    background: transparent;
+                    color: var(--whitecolor);
+
+                    &::placeholder{
+                        color: var(--whitecolor);
+                        opacity: .5;
+                    }
+                }
+
+                .btn{
+                    width: 30%;
+                    justify-content: center;
+                    color: var(--whitecolor);
+                    font-size: 18px;
+                    font-weight: 500;
+                    gap: .5rem;
+
+                    .icon{
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+
+    }
+}

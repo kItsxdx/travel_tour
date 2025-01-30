@@ -6,6 +6,8 @@ import {HiFilter} from 'react-icons/hi'
 import {FiFacebook} from 'react-icons/fi'
 import {FaInstagram} from 'react-icons/fa'
 import {RiTiktokLine} from 'react-icons/ri'
+import {FaSquareXTwitter} from 'react-icons/fa6'
+import {TbBrandAirbnb} from 'react-icons/tb'
 import {CiViewList} from 'react-icons/ci'
 import {TbApps}from 'react-icons/tb'
 
@@ -66,6 +68,8 @@ const Home = () => {
                         <FiFacebook className="icon"/>
                         <FaInstagram className="icon"/>
                         <RiTiktokLine className="icon"/>
+                        <FaSquareXTwitter className='icon'/>
+                        <TbBrandAirbnb className='icon'/>
                     </div>
                     <div className="leftIcons">
                         <CiViewList className="icon"/>

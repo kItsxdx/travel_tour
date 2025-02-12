@@ -50,7 +50,7 @@ const Footer = () => {
                         in favour of a product/piece of information/service, etc.
                         </div>
 
-                        <div className="footerSocials">
+                        <div className="footerSocials flex">
                             <FiFacebook className="icon"/>
                             <FaInstagram className="icon"/>
                             <RiTiktokLine className="icon"/>
@@ -62,6 +62,8 @@ const Footer = () => {
 
 
                     <div className="footerLinks grid">
+                    
+                    
                     {/* กลุ่มท่ี 1 */}
                         <div className="linkGroup">
                             <span className="groupTitle">
@@ -94,6 +96,77 @@ const Footer = () => {
                             </li>
 
                         </div>
+                    {/* กลุ่มท่ี 2 */}
+                        <div className="linkGroup">
+                            <span className="groupTitle">
+                                หุ้นส่วนของเราชาวมิจ
+                            </span>
+
+                            <li className="footerList flex">
+                                <FaAngleRight className='icon'/>
+                                Facebook
+                            </li>
+
+                            <li className="footerList flex">
+                                <FaAngleRight className='icon'/>
+                                IG
+                            </li>
+
+                            <li className="footerList flex">
+                                <FaAngleRight className='icon'/>
+                                Twitter
+                            </li>
+
+                            <li className="footerList flex">
+                                <FaAngleRight className='icon'/>
+                                Tiktok
+                            </li>
+
+                            <li className="footerList flex">
+                                <FaAngleRight className='icon'/>
+                                AirBNB
+                            </li>
+
+                        </div>
+                    {/* กลุ่มท่ี 3 */}
+                        <div className="linkGroup">
+                            <span className="groupTitle">
+                                สถานที่ยอดฮิต
+                            </span>
+
+                            <li className="footerList flex">
+                                <FaAngleRight className='icon'/>
+                                Chiang Mai
+                            </li>
+
+                            <li className="footerList flex">
+                                <FaAngleRight className='icon'/>
+                                phuket
+                            </li>
+
+                            <li className="footerList flex">
+                                <FaAngleRight className='icon'/>
+                                pattaya
+                            </li>
+
+                            <li className="footerList flex">
+                                <FaAngleRight className='icon'/>
+                                grabi
+                            </li>
+
+                            <li className="footerList flex">
+                                <FaAngleRight className='icon'/>
+                                bangkok
+                            </li>
+
+                        </div>
+
+
+                    </div>
+
+                    <div className="footerDiv flex">
+                        <small>แนะนำสถานที่ท่องเที่ยวทุกที่ทั่วไทย</small>
+                        <small>MY GitHub Here</small>
                     </div>
 
                 </div>

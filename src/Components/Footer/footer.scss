@@ -8,7 +8,7 @@
     --whitecolordeam:white;
     --graytext:rgb(190,190,190);
     --inputcolor:lightgray;
-    --bodycolor:rgb(42, 123, 97);
+    --bodycolor:rgb(251, 251, 251);
     --cardBG:rgb(240, 246, 244);
 
 }
@@ -107,6 +107,114 @@
                 }
             }
         }
+
+        .footerCard{
+            position:relative;
+            padding: 1rem 1rem 4rem;
+            gap: 2rem;
+            border-radius: 1rem;
+            background:var(--bodycolor);
+            width: 100%;
+            justify-content: center;
+            flex-direction: column;
+            align-items: flex-start;
+            overflow: hidden;
+
+            .footerIntro{
+                flex-basis: 50%;
+                align-items: flex-start;
+                justify-items: center;
+                flex-direction:column;
+                row-gap: .5rem;
+            }
+
+            .logoDiv{
+                .logo{
+                    color:var(--blackcolor);
+                    font-weight: 600;
+
+                    .icon{
+                        font-size: 25px;
+                        color: var(--primarycolor);
+                        margin-right:10px;
+                    }
+                }
+            }
+
+            .footerParagraph{
+                font-size: 13px;
+                color: var(--textcolor);
+            }
+
+            .footerSocials{
+                column-gap: .5rem;
+
+
+                icon{
+                    color:var(--blackcolor);
+                    font-size: 20px;
+
+                    &:hover{
+                        color:var(--primarycolor);
+
+                    }
+                }
+            }
+
+            .footerLinks{
+                flex-basis:50%;
+                width: 100%;
+                gap: 1rem;
+                grid-template-columns: repeat(2,1fr);
+                justify-content:space-between;
+
+                .linkGroup{
+                    .groupTitle{
+                        display: block;
+                        font-weight: 600;
+                        color: var(--blackcolor);
+                        margin-bottom:.5rem ;
+                    }
+
+                    .footerList{
+                        font-size: 15px;
+                        color: var(--textcolor);
+                        transition: .3s ease-in-out;
+
+                        .icon{
+                            font-size: 15px;
+                            color: var(--graytext);
+                        }
+
+                        &:hover{
+                            color: var(--primarycolor);
+                            transform: translate(7xp);
+
+                            .icon{
+                                color: var(--secondarycolor);
+                            }
+                        }
+                    }
+                }
+            }
+
+            .footerDiv{
+                flex-direction: column;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                background: var(--secondarycolor);
+                padding: .5rem 2rem;
+
+                small{
+                    font-size: 10px;
+                    color: var(--whitecolor);
+                }
+            }
+        }
+
+
 
     }
 }
